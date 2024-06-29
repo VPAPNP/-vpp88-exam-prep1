@@ -44,7 +44,9 @@ jobs:
     - name: Install Dependencies  
       run: npm ci
     - name: Install browsers
-      run: npm install playwright  
+      run: npm install playwright
+    - name: Run Application
+      run: npm run start    
     - name: Run UI Tests  
       run: npm run test:ui
     - name: Dispaly MY User Name
